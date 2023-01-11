@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:laundryta/screens/home.dart';
+import 'package:laundryta/static/static_values.dart';
 import 'package:loading_indicator/loading_indicator.dart';
 
 class SplashPage extends StatefulWidget {
@@ -29,28 +30,23 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: StaticValue.primaryColor,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: const [
-            Text(
-              "LaundryTa'",
-              style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontFamily: 'Calibri, sans-serif',
-                  fontSize: 24,
-                  color: Colors.black),
+          children: [
+            Image.asset(
+              'assets/laundryta-logo.png',
+              width: 228,
+              height: 300,
             ),
-            SizedBox(height: 25.54),
-            SizedBox(
-              height: 20,
+            const SizedBox(
+              height: 50,
               child: LoadingIndicator(
                 indicatorType: Indicator.circleStrokeSpin,
-                colors: [Colors.white],
-                backgroundColor: Colors.white,
-                pathBackgroundColor: Colors.black,
+                colors: [StaticValue.primaryColor],
+                backgroundColor: StaticValue.primaryColor,
+                pathBackgroundColor: Colors.white,
                 strokeWidth: 2,
               ),
             ),
