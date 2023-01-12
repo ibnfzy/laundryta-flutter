@@ -29,16 +29,22 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  auto_size_text: ^3.0.0
+  cached_network_image: ^3.2.3
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
   flutter_session_manager: ^1.0.3
+  google_fonts: ^3.0.1
   google_nav_bar: ^5.0.6
   json_annotation: ^4.7.0
+  json_path: ^0.4.2
   loading_indicator: ^3.1.0
   path_provider: ^2.0.11
+  percent_indicator: ^4.2.2
   permission_handler: ^10.2.0
   sqflite: ^2.2.2
+  url_launcher: ^6.1.7
 
 dev_dependencies:
   flutter_lints: ^2.0.0
